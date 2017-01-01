@@ -1,0 +1,17 @@
+{
+  "generator-chisel": {
+    "config": {
+      "name": "24",
+      "author": "MichalG",
+      "nameSlug": "24",
+      "nameCamel": "24",
+      "features": {
+        "has_jquery": true,
+        "has_babel": true
+      }
+    },
+    "pages": [
+      "Index"
+    ]
+  }
+}

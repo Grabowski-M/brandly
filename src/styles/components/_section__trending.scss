@@ -1,0 +1,166 @@
+.section__trending {
+  background: url("../assets/images/trending/trending_background.jpg") center;
+  background-size: cover;
+}
+
+.section__trending__carousel {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.section__trending__slide {
+  align-items: center;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.trending__slide__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.trending__slide__media__wrapper {
+  width: 100%;
+  padding: 20px;
+
+  @include bp-small {
+    width: 50%;
+  }
+}
+
+.trending__slide__media {
+  width: 100%;
+}
+
+.trending__slide__info {
+  width: 100%;
+  padding: 20px;
+
+  @include bp-small {
+    width: 50%;
+  }
+}
+
+.trending__paragraph {
+  line-height: 1.2em;
+  margin: 20px 0;
+  font-family: $font-primary-regular;
+  color: $color-details-brown;
+}
+
+.trending__slide__title {
+  color: #dc0000;
+  text-transform: uppercase;
+  font-family: $font-primary-bold;
+}
+
+.trending__slide__subdescription:after {
+  content: '';
+  display: block;
+  background: $color-details-brown;
+  width: 40px;
+  height: 2px;
+  margin-top: 20px;
+
+}
+
+.trending__slide__buttons {
+  text-align: center;
+  width: 100%;
+}
+
+.trending__slide__sizes {
+  display: flex;
+}
+
+.trending__slide__size-button {
+  color: $color-details-brown;
+  width: 100%;
+  height: 40px;
+  border: 1px solid $color-details-brown;
+  margin: 5px;
+  text-align: center;
+  line-height: 40px;
+
+  &.is-active {
+    background: $color-details-brown;
+    color: white;
+  }
+
+  &:hover {
+    background: $color-details-brown;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.trending__slide__nav {
+  display: flex;
+}
+
+.trending__slide__nav-button {
+  color: $color-details-brown;
+  width: 100%;
+  height: 40px;
+  border: 1px solid $color-details-brown;
+  margin: 5px;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 40px;
+
+  &:hover {
+    background: $color-details-brown;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+
+.section__trending {
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translate(-70%);
+    li {
+      display: inline;
+      padding: 5px;
+
+      button {
+        border: 1px solid $color-details-brown;
+        background: $color-details-brown;
+        border-radius: 10px;
+        height: 15px;
+        width: 15px;
+        font-size: 0.1em;
+        color: transparent;
+        &:hover {
+          cursor: pointer;
+        }
+        &:focus {
+          border: none;
+        }
+      }
+
+      &.slick-active {
+        button {
+          background: transparent;
+          border: 1px solid #dc0000;
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+}

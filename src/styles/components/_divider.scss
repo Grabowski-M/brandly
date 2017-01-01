@@ -1,0 +1,23 @@
+.divider {
+  text-align: center;
+  padding: 50px;
+}
+
+.divider__paragraph {
+  font-family: $font-primary-italic;
+  font-size: 1.5em;
+  opacity: 0.7;
+}
+
+.divider__paragraph:before,
+.divider__paragraph:after {
+  position: absolute;
+  left: 50%;
+  align-self: center;
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: red;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,38 @@
+.button-white {
+  align-items: center;
+  border: white 2px solid;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin: 40px auto;
+  transform: scale(1);
+  transition: .2s;
+  text-transform: uppercase;
+  font-size: 0.8em;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.button-dark {
+  align-items: center;
+  border: $color-details-brown 2px solid;
+  background: white;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin: 40px 0;
+  transform: scale(1);
+  transition: .2s;
+  text-transform: uppercase;
+  font-family: $font-primary-bold;
+  font-size: 0.8em;
+  padding: 5px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
