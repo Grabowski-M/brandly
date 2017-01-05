@@ -50,6 +50,14 @@
     overflow: hidden;
   }
 
+  .slick-arrow {
+    display: none !important; //important usage due to inline styling by slick carousel
+
+    @include bp-full {
+      display: block !important; //important usage due to inline styling by slick carousel
+    }
+  }
+
   .carousel__left {
     position: absolute;
     top: 50%;

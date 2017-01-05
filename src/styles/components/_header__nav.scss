@@ -105,6 +105,10 @@
 .header__nav__trigger {
   margin-left: auto;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @include bp-medium {
     display: none;
   }
