@@ -1,4 +1,4 @@
 # brandly
 PSD to HTML conversion
 
-Github Pages: https://miriloth.github.io/brandly/
+Github Pages: https://grabowski-m.github.io/brandly/
